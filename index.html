@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>HardFix — Gestión móvil</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b0d10">
 <style>
 @import url('https://fonts.cdnfonts.com/css/harabara');
 @font-face{font-family:Harabara;src:url('https://fonts.cdnfonts.com/s/14864/Harabara.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
@@ -365,6 +367,15 @@ modal.classList.remove('show');
 await loadRepairs()
 };
 </script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js');
+  });
+}
+</script>
+
+</div></body></html>
 </div>
 </body>
 </html>
