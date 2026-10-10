@@ -1,0 +1,15 @@
+HARDFIX GESTIÓN — PAQUETE PWA COMPLETO
+
+Este paquete incluye el index.html actualizado (con los ajustes visuales del formulario y los enlaces PWA), el manifiesto, el service worker y los iconos.
+
+PUBLICACIÓN:
+1. En el repositorio de GitHub, entrá a la carpeta gestion/.
+2. Reemplazá el index.html que ya está ahí por el de este paquete.
+3. Subí manifest.webmanifest y sw.js a esa misma carpeta gestion/.
+4. Creá/actualizá gestion/icons/ y subí icon-192.png e icon-512.png allí.
+5. Guardá los cambios (commit) y esperá que GitHub Pages publique.
+6. Abrí https://hardfix-ste.github.io/gestion/ en Chrome, actualizá la página y revisá el menú ⋮ para instalar.
+
+No subas todo el contenido dentro de una subcarpeta adicional: index.html, manifest.webmanifest y sw.js deben quedar directamente dentro de gestion/.
+
+La PWA requiere HTTPS (GitHub Pages lo ofrece). El service worker no intercepta peticiones a otros dominios como Supabase. No se ha comprobado todavía la instalación en el dispositivo real.
